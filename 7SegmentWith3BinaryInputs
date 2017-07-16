@@ -1,0 +1,42 @@
+
+void setup() {
+  for(int pinIN=1; pinIN<=3; pinIN++){
+    pinMode(pinIN,INPUT);
+   }
+
+  for(int pinOUT= 4; pinOUT<=7; pinOUT++){
+    pinMode(pinOUT,OUTPUT);  
+  }
+}
+
+void loop() {
+  int pin1 = digitalRead(1);
+  int pin2 = digitalRead(2);
+  int pin3 = digitalRead(3);
+
+  
+  
+  if(pin1==HIGH){
+    digitalWrite(4,HIGH);
+   }
+   else{
+     digitalWrite(4,LOW);
+   }
+
+   if(pin2==HIGH){
+    digitalWrite(5,HIGH);
+   }
+   else{
+     digitalWrite(5,LOW);
+   }
+
+  if(pin3==HIGH){
+    digitalWrite(6,HIGH);
+   }
+   else{
+     digitalWrite(6,LOW);
+   }
+   
+   digitalWrite(7,LOW);
+   
+}
